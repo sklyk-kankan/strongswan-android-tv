@@ -300,6 +300,11 @@ public class CharonVpnService extends VpnService implements Runnable, VpnStateSe
 								continue;
 							}
 
+							Log.i(TAG, "==============================");
+							Log.i(TAG, mCurrentProfile.toPrint());
+							Log.i(TAG, "==============================");
+
+
 							SettingsWriter writer = new SettingsWriter();
 							writer.setValue("global.language", Locale.getDefault().getLanguage());
 							writer.setValue("global.mtu", mCurrentProfile.getMTU());

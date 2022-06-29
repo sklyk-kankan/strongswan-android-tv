@@ -335,6 +335,35 @@ public class VpnProfile implements Cloneable
 		return mName;
 	}
 
+	public String toPrint() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("Id:" + getId() + "\n");
+		sb.append("UUID:" + getUUID() + "\n");
+		sb.append("VpnType:" + getVpnType() + "\n");
+		sb.append("Name:" + getName() + "\n");
+		sb.append("Gateway:" + getGateway() + "\n");
+		sb.append("Username:" + getUsername() + "\n");
+		sb.append("Password:" + getPassword() + "\n");
+		sb.append("CertificateAlias:" + getCertificateAlias() + "\n");
+		sb.append("UserCertificateAlias:" + getUserCertificateAlias() + "\n");
+		sb.append("RemoteId:" + getRemoteId() + "\n");
+		sb.append("LocalId:" + getLocalId() + "\n");
+		sb.append("ExcludedSubnets:" + getExcludedSubnets() + "\n");
+		sb.append("IncludedSubnets:" + getIncludedSubnets() + "\n");
+		sb.append("SelectedApps:" + getSelectedApps() + "\n");
+		sb.append("IkeProposal:" + getIkeProposal() + "\n");
+		sb.append("EspProposal:" + getEspProposal() + "\n");
+		sb.append("DnsServers:" + getDnsServers() + "\n");
+		sb.append("MTU:" + getMTU() + "\n");
+		sb.append("Port:" + getPort() + "\n");
+		sb.append("SplitTunneling:" + getSplitTunneling() + "\n");
+		sb.append("NATKeepAlive:" + getNATKeepAlive() + "\n");
+		sb.append("Flags:" + getFlags() + "\n");
+		sb.append("SelectedAppsHandling:" + getSelectedAppsHandling());
+
+		return sb.toString();
+	}
+
 	@Override
 	public boolean equals(Object o)
 	{
