@@ -226,4 +226,5 @@
     <string name="tile_connect">Connect VPN</string>
     <string name="tile_disconnect">Disconnect VPN</string>
 
+    <string name="vpn_profile">VPN Profile</string>
 </resources>

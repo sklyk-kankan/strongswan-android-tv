@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
     Copyright (C) 2012-2013 Tobias Brunner
     HSR Hochschule fuer Technik Rapperswil
 
@@ -14,21 +13,35 @@
     for more details.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <TextView android:id="@+id/server"
+    <TextView
+        android:id="@+id/vpn_profile"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_width="400dp" />
+        android:text="@string/vpn_profile"/>
 
-    <TextView android:id="@+id/username"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/server"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_width="400dp" />
+        android:hint="Server"/>
 
-    <TextView android:id="@+id/password"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/username"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_width="400dp" />
+        android:hint="user name"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        />
 
     <Button
         android:id="@+id/connect"
